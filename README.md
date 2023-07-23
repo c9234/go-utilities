@@ -1,0 +1,1 @@
+Do `go run ./main.go` in dev container.
