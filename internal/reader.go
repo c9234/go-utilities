@@ -40,7 +40,7 @@ func CreateCSV() ([]*Follower, error) {
 
 				data := entry.Content.ItemContent.UserResults.Result.Legacy
 
-				s := data.Name + ",@" + data.ScreenName + ",https://twitter.com/" + data.ScreenName + "\n"
+				s := "@" + data.ScreenName + "," + data.Name + ",https://twitter.com/" + data.ScreenName + "\n"
 				outputFile.WriteString(s)
 			}
 		}
